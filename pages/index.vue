@@ -1,7 +1,8 @@
 <template>
   <div>
     <home-header></home-header>
-    <home-counter :initial-counter="initial" />
+    <home-counter :defaultInitialValue="10" />
+    <button @click="initial++">Update prop ({{ initial }})</button>
   </div>
 </template>
 

@@ -12,6 +12,7 @@ export default {
   created() {
     console.log('created')
   },
+
   beforeMount() {
     console.log('beforeMount')
   },

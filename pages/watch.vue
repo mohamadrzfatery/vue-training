@@ -35,7 +35,7 @@ export default {
       handler(value) {
         console.log('myvalue', value)
       },
-      deep: true, //yani taghiraate dakhel object ro neshoon bede
+      deep: true, // yani taghiraate dakhel object ro neshoon bede
     },
     'myObject.child.a'(value) {
       console.log('value', value)

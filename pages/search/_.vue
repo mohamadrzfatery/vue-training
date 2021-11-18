@@ -11,6 +11,9 @@
 
 <script>
 export default {
+  beforeMount() {
+    console.log(this.$route.query)
+  },
   mounted() {
     console.log(this.$route.params)
   },

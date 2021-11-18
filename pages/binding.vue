@@ -6,6 +6,8 @@
     </div>
     <div :style="{ color: 'yellow' }">style binding</div>
     {{ isActive.toString() }}
+    <hr />
+    <binding-child a="a" b="b"></binding-child>
   </div>
 </template>
 

@@ -37,9 +37,15 @@ export default {
   },
   methods: {
     service() {
+      if (this.source) {
+        this.source.cancel('asdas')
+      }
+      this.source = this.$axios.CancelToken.source()
+      console.log(this.source)
       this.loading = true
       return this.$axios
         .$get('https://jsonplaceholder.typicode.com/todos', {
+          CancelToken: this.source.token,
           params: {
             title_like: this.title,
           },
